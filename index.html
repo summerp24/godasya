@@ -1,749 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Godasya – Pure A2 Cow Ghee | Desi Gir Cow Ghee from Family Farms</title>
-  <meta name="description" content="Godasya brings you 100% pure A2 cow ghee, traditionally churned from Gir cow milk sourced from our family farms. Ideal for health-conscious families, pregnant women, toddlers, and weight gain." />
-  <meta name="keywords" content="pure cow ghee, A2 protein ghee, desi ghee, Gir cow ghee, organic ghee India, ghee for toddlers, ghee for pregnancy, godasya ghee" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://godasya.in/" />
-  <!-- Open Graph -->
-  <meta property="og:title" content="Godasya – Pure A2 Cow Ghee from Family Farms" />
-  <meta property="og:description" content="Traditionally churned A2 Gir cow ghee. Sourced from our family farms. Order on WhatsApp." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://godasya.in/" />
-  <!-- Schema.org structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FoodEstablishment",
-    "name": "Godasya",
-    "description": "Pure A2 Cow Ghee traditionally churned from Gir cow milk sourced from family farms.",
-    "url": "https://godasya.in",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Pimpri-Chinchwad",
-      "addressRegion": "Maharashtra",
-      "addressCountry": "IN"
-    },
-    "offers": {
-      "@type": "Offer",
-      "name": "Pure A2 Gir Cow Ghee",
-      "priceCurrency": "INR",
-      "availability": "https://schema.org/InStock"
-    }
-  }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    :root {
-      --gold: #C8922A;
-      --gold-light: #E8B84B;
-      --gold-pale: #FDF3DC;
-      --green: #2D6A4F;
-      --green-light: #40916C;
-      --cream: #FEFAF1;
-      --dark: #1A1A1A;
-      --text: #333333;
-      --muted: #6B7280;
-      --white: #FFFFFF;
-      --border: #E5D5B0;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--cream); }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GODASYA: Pure cow ghee and A2 Bilona cow ghee sourced directly from our family farms. No added preservatives, small-batch traditional Desi ghee rich in A2 protein.">
+    <meta name="keywords" content="Cow ghee, Pure ghee, Desi ghee, Gir, A2 protein, A2 cow ghee, Homemade ghee, family farms products">
+    <title>GODASYA | Pure A2 Cow Ghee from Our Family Farm</title>
 
-    /* NAV */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-      background: rgba(254,250,241,0.95); backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 5%; height: 72px;
-      box-shadow: 0 2px 20px rgba(200,146,42,0.08);
-    }
-    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .logo-icon {
-      width: 44px; height: 44px; background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      font-size: 22px; box-shadow: 0 4px 15px rgba(200,146,42,0.3);
-    }
-    .logo-text { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--gold); letter-spacing: 1px; }
-    .nav-links { display: flex; gap: 32px; list-style: none; }
-    .nav-links a { text-decoration: none; color: var(--text); font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--gold); }
-    .nav-cta {
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      color: var(--white); padding: 10px 24px; border-radius: 50px;
-      text-decoration: none; font-weight: 600; font-size: 0.9rem;
-      box-shadow: 0 4px 15px rgba(200,146,42,0.35); transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(200,146,42,0.45); }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-    .hamburger span { width: 24px; height: 2px; background: var(--dark); border-radius: 2px; }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-    /* HERO */
-    #hero {
-      min-height: 100vh;
-      background: linear-gradient(160deg, #FEFAF1 0%, #FDF3DC 45%, #F5E6C5 100%);
-      display: flex; align-items: center; padding: 100px 5% 60px;
-      position: relative; overflow: hidden;
-    }
-    #hero::before {
-      content: ''; position: absolute; top: -100px; right: -100px;
-      width: 600px; height: 600px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(200,146,42,0.12) 0%, transparent 70%);
-    }
-    #hero::after {
-      content: ''; position: absolute; bottom: -80px; left: -80px;
-      width: 400px; height: 400px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(45,106,79,0.08) 0%, transparent 70%);
-    }
-    .hero-content { max-width: 600px; z-index: 1; }
-    .hero-badge {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: var(--white); border: 1px solid var(--border); border-radius: 50px;
-      padding: 8px 16px; font-size: 0.8rem; font-weight: 600; color: var(--green);
-      margin-bottom: 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .hero-badge i { color: var(--gold); }
-    h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.15; color: var(--dark); margin-bottom: 20px; }
-    h1 span { color: var(--gold); }
-    .hero-sub { font-size: 1.1rem; line-height: 1.7; color: var(--muted); margin-bottom: 36px; max-width: 480px; }
-    .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
-    .btn-primary {
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      color: var(--white); padding: 15px 32px; border-radius: 50px;
-      text-decoration: none; font-weight: 700; font-size: 1rem;
-      box-shadow: 0 6px 25px rgba(200,146,42,0.4); transition: all 0.3s;
-      display: flex; align-items: center; gap: 10px;
-    }
-    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(200,146,42,0.5); }
-    .btn-secondary {
-      background: transparent; border: 2px solid var(--green); color: var(--green);
-      padding: 13px 28px; border-radius: 50px; text-decoration: none;
-      font-weight: 600; font-size: 1rem; transition: all 0.3s;
-    }
-    .btn-secondary:hover { background: var(--green); color: var(--white); }
-    .hero-stats { display: flex; gap: 32px; flex-wrap: wrap; }
-    .stat { }
-    .stat-num { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--gold); }
-    .stat-label { font-size: 0.8rem; color: var(--muted); font-weight: 500; margin-top: 2px; }
-    .hero-visual {
-      flex: 1; display: flex; justify-content: center; align-items: center;
-      z-index: 1; min-width: 300px;
-    }
-    .jar-graphic {
-      width: 280px; height: 340px; position: relative; margin: 0 auto;
-    }
-    .jar-body {
-      width: 200px; height: 260px;
-      background: linear-gradient(160deg, rgba(255,255,255,0.9), rgba(253,243,220,0.7));
-      border-radius: 20px 20px 40px 40px;
-      border: 2px solid rgba(200,146,42,0.3);
-      margin: 40px auto 0;
-      display: flex; align-items: center; justify-content: center;
-      position: relative;
-      box-shadow: 10px 20px 60px rgba(200,146,42,0.2), inset 0 0 40px rgba(200,146,42,0.05);
-    }
-    .jar-fill {
-      width: 160px; height: 160px; border-radius: 50%;
-      background: radial-gradient(circle at 35% 35%, #F5D98B, #C8922A, #8B5E1A);
-      box-shadow: 0 8px 30px rgba(200,146,42,0.4);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 3.5rem;
-    }
-    .jar-lid {
-      width: 220px; height: 30px; margin: 0 auto;
-      background: linear-gradient(135deg, var(--gold-light), var(--gold));
-      border-radius: 8px 8px 0 0;
-      box-shadow: 0 -4px 15px rgba(200,146,42,0.3);
-    }
-    .jar-label-tag {
-      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
-      background: rgba(255,255,255,0.95); border: 1px solid var(--border);
-      border-radius: 8px; padding: 8px 16px; text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-    .jar-label-tag .brand { font-family: 'Playfair Display', serif; font-size: 0.85rem; font-weight: 700; color: var(--gold); }
-    .jar-label-tag .product { font-size: 0.7rem; color: var(--muted); }
-    .floating-badge {
-      position: absolute; background: var(--white); border-radius: 12px;
-      padding: 8px 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-      font-size: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 6px;
-    }
-    .fb1 { top: 10px; right: -10px; color: var(--green); }
-    .fb2 { bottom: 20px; left: -20px; color: var(--gold); }
-    .fb1 i, .fb2 i { font-size: 1rem; }
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#db1e14',      // primary
+                        brandDark: '#221e1e',     // secondary, body-text, brand-dark
+                        brandCream: '#fff5db',    // body-bg, footer-bg, brand-cream
+                        brandWarm: '#f5e3bc',     // dark-cream
+                        brandBorder: '#e5e5e5',   // border-color
+                        brandFooterText: '#000000',
+                        brandFooterSocial: '#bbbbbb'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 
-    /* SECTION COMMONS */
-    section { padding: 80px 5%; }
-    .section-label { font-size: 0.8rem; font-weight: 700; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
-    h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; color: var(--dark); margin-bottom: 16px; }
-    h2 span { color: var(--gold); }
-    .section-desc { font-size: 1rem; line-height: 1.75; color: var(--muted); max-width: 560px; }
-    .text-center { text-align: center; }
-    .text-center .section-desc { margin: 0 auto; }
-
-    /* WHY GODASYA */
-    #why { background: var(--white); }
-    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; margin-top: 52px; }
-    .why-card {
-      background: var(--cream); border: 1px solid var(--border); border-radius: 20px;
-      padding: 32px 28px; transition: all 0.3s; position: relative; overflow: hidden;
-    }
-    .why-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-      background: linear-gradient(90deg, var(--gold), var(--gold-light));
-      transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
-    }
-    .why-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(200,146,42,0.15); }
-    .why-card:hover::before { transform: scaleX(1); }
-    .why-icon { font-size: 2.2rem; margin-bottom: 16px; }
-    .why-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
-    .why-card p { font-size: 0.9rem; line-height: 1.65; color: var(--muted); }
-
-    /* BENEFITS */
-    #benefits {
-      background: linear-gradient(160deg, #1A3A2A 0%, #2D6A4F 60%, #1E4D38 100%);
-      color: var(--white); position: relative; overflow: hidden;
-    }
-    #benefits::before {
-      content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-    #benefits h2 { color: var(--white); }
-    #benefits h2 span { color: var(--gold-light); }
-    #benefits .section-desc { color: rgba(255,255,255,0.75); }
-    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 52px; position: relative; }
-    .benefit-card {
-      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 20px; padding: 28px; backdrop-filter: blur(10px);
-      transition: all 0.3s;
-    }
-    .benefit-card:hover { background: rgba(255,255,255,0.12); transform: translateY(-4px); }
-    .benefit-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
-    .benefit-icon { font-size: 1.8rem; }
-    .benefit-card h3 { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--gold-light); }
-    .benefit-card p { font-size: 0.88rem; line-height: 1.65; color: rgba(255,255,255,0.75); }
-
-    /* PRODUCTS */
-    #products { background: var(--cream); }
-    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 28px; margin-top: 52px; }
-    .product-card {
-      background: var(--white); border: 1px solid var(--border); border-radius: 24px;
-      overflow: hidden; transition: all 0.35s; position: relative;
-    }
-    .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(200,146,42,0.18); }
-    .product-img {
-      height: 200px; display: flex; align-items: center; justify-content: center;
-      background: linear-gradient(135deg, var(--gold-pale), #FAE8C0);
-      font-size: 5rem; position: relative;
-    }
-    .product-badge {
-      position: absolute; top: 16px; right: 16px;
-      background: var(--green); color: var(--white);
-      font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 50px;
-    }
-    .product-info { padding: 24px; }
-    .product-info h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; }
-    .product-info p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
-    .product-price { font-size: 1.3rem; font-weight: 700; color: var(--gold); font-family: 'Playfair Display', serif; margin-bottom: 16px; }
-    .product-price span { font-size: 0.85rem; color: var(--muted); font-weight: 400; font-family: 'Inter', sans-serif; }
-    .btn-order {
-      width: 100%; background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      color: var(--white); border: none; padding: 12px; border-radius: 12px;
-      font-weight: 700; font-size: 0.95rem; cursor: pointer; transition: all 0.3s;
-      display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none;
-    }
-    .btn-order:hover { box-shadow: 0 6px 20px rgba(200,146,42,0.4); transform: scale(1.02); }
-
-    /* PROCESS */
-    #process { background: var(--white); }
-    .process-steps { display: flex; gap: 0; margin-top: 52px; flex-wrap: wrap; }
-    .step {
-      flex: 1; min-width: 180px; text-align: center; position: relative; padding: 0 16px;
-    }
-    .step:not(:last-child)::after {
-      content: ''; position: absolute; top: 36px; right: -2px;
-      width: 4px; height: 4px; border-top: 2px dashed var(--border);
-      width: calc(50% - 36px); height: 2px; border: none;
-      border-top: 2px dashed var(--gold); right: -20%; top: 36px;
-    }
-    .step-num {
-      width: 72px; height: 72px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      color: var(--white); font-family: 'Playfair Display', serif;
-      font-size: 1.5rem; font-weight: 700;
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 20px; box-shadow: 0 6px 20px rgba(200,146,42,0.3);
-      font-size: 1.8rem;
-    }
-    .step h3 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
-    .step p { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
-
-    /* ABOUT */
-    #about { background: var(--gold-pale); }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-top: 52px; }
-    .about-visual {
-      background: linear-gradient(135deg, var(--gold-pale), #EDD99A);
-      border-radius: 30px; height: 400px; display: flex; align-items: center;
-      justify-content: center; font-size: 8rem; position: relative;
-      box-shadow: 0 20px 60px rgba(200,146,42,0.2); border: 2px solid rgba(200,146,42,0.2);
-    }
-    .about-text h2 { margin-bottom: 20px; }
-    .about-text p { font-size: 0.95rem; line-height: 1.8; color: var(--text); margin-bottom: 16px; }
-    .about-highlights { display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
-    .about-highlight { display: flex; align-items: flex-start; gap: 12px; }
-    .ab-icon { width: 36px; height: 36px; border-radius: 50%; background: var(--gold); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0; }
-    .ab-text h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 3px; }
-    .ab-text p { font-size: 0.82rem; color: var(--muted); }
-
-    /* TESTIMONIALS */
-    #testimonials { background: var(--white); }
-    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 52px; }
-    .testimonial-card {
-      background: var(--cream); border: 1px solid var(--border); border-radius: 20px;
-      padding: 28px; transition: all 0.3s;
-    }
-    .testimonial-card:hover { box-shadow: 0 10px 30px rgba(200,146,42,0.12); }
-    .stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 14px; }
-    .testimonial-card p { font-size: 0.9rem; line-height: 1.7; color: var(--text); font-style: italic; margin-bottom: 20px; }
-    .reviewer { display: flex; align-items: center; gap: 12px; }
-    .reviewer-avatar {
-      width: 44px; height: 44px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem; font-weight: 700; color: var(--white);
-    }
-    .reviewer-name { font-weight: 700; font-size: 0.9rem; }
-    .reviewer-city { font-size: 0.8rem; color: var(--muted); }
-
-    /* CTA SECTION */
-    #cta {
-      background: linear-gradient(135deg, var(--gold) 0%, #B57B20 50%, var(--gold-light) 100%);
-      text-align: center; padding: 80px 5%; color: var(--white);
-    }
-    #cta h2 { color: var(--white); font-size: clamp(1.8rem, 3.5vw, 2.8rem); margin-bottom: 16px; }
-    #cta p { color: rgba(255,255,255,0.85); max-width: 500px; margin: 0 auto 36px; line-height: 1.7; }
-    .cta-btns { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
-    .btn-white {
-      background: var(--white); color: var(--gold); padding: 15px 36px;
-      border-radius: 50px; font-weight: 700; font-size: 1rem;
-      text-decoration: none; transition: all 0.3s;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.2);
-      display: flex; align-items: center; gap: 10px;
-    }
-    .btn-white:hover { transform: translateY(-3px); box-shadow: 0 10px 35px rgba(0,0,0,0.3); }
-    .btn-outline-white {
-      background: transparent; border: 2px solid var(--white); color: var(--white);
-      padding: 13px 32px; border-radius: 50px; font-weight: 600; font-size: 1rem;
-      text-decoration: none; transition: all 0.3s;
-    }
-    .btn-outline-white:hover { background: var(--white); color: var(--gold); }
-
-    /* FOOTER */
-    footer {
-      background: var(--dark); color: rgba(255,255,255,0.8); padding: 56px 5% 32px;
-    }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
-    .footer-brand .logo-text { color: var(--gold-light); font-size: 1.6rem; display: block; margin-bottom: 14px; }
-    .footer-brand p { font-size: 0.88rem; line-height: 1.75; color: rgba(255,255,255,0.6); max-width: 320px; }
-    .footer-social { display: flex; gap: 12px; margin-top: 20px; }
-    .social-icon {
-      width: 40px; height: 40px; border-radius: 50%;
-      background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center;
-      color: rgba(255,255,255,0.7); text-decoration: none; font-size: 1rem;
-      transition: all 0.3s;
-    }
-    .social-icon:hover { background: var(--gold); color: var(--white); }
-    .footer-col h4 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--white); margin-bottom: 20px; }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
-    .footer-col a:hover { color: var(--gold-light); }
-    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 16px; }
-    .footer-bottom p { font-size: 0.82rem; color: rgba(255,255,255,0.45); }
-    .fssai-badge { display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: rgba(255,255,255,0.45); }
-
-    /* FLOATING WHATSAPP */
-    .wa-float {
-      position: fixed; bottom: 28px; right: 28px; z-index: 9999;
-      width: 58px; height: 58px; background: #25D366; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center; font-size: 1.7rem; color: var(--white);
-      box-shadow: 0 6px 25px rgba(37,211,102,0.5); text-decoration: none; transition: all 0.3s;
-    }
-    .wa-float:hover { transform: scale(1.12); box-shadow: 0 10px 35px rgba(37,211,102,0.6); }
-
-    /* RESPONSIVE */
-    @media (max-width: 900px) {
-      #hero { flex-direction: column; text-align: center; padding-top: 100px; }
-      .hero-btns { justify-content: center; }
-      .hero-stats { justify-content: center; }
-      .hero-content { max-width: 100%; }
-      .hero-visual { margin-top: 40px; }
-      .about-grid { grid-template-columns: 1fr; }
-      .about-visual { height: 250px; font-size: 5rem; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-      .nav-links { display: none; }
-      .hamburger { display: flex; }
-    }
-    @media (max-width: 600px) {
-      section { padding: 60px 4%; }
-      .footer-grid { grid-template-columns: 1fr; }
-      .step:not(:last-child)::after { display: none; }
-    }
-  </style>
+    <style>
+        html { scroll-behavior: smooth; }
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            width: 100%;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
 </head>
-<body>
+<body class="font-sans text-brandDark bg-brandCream antialiased selection:bg-brandRed selection:text-brandCream relative">
 
-  <!-- NAV -->
-  <nav>
-    <a href="#" class="nav-logo">
-      <div class="logo-icon">🐄</div>
-      <span class="logo-text">Godasya</span>
+    <div class="bg-brandDark text-brandCream text-center py-2.5 text-xs sm:text-sm tracking-wide font-medium">
+        Pure Nourishment from Our Family Farm | Free Shipping on 2+ Jars
+    </div>
+
+    <nav class="sticky top-0 z-40 bg-brandCream/95 backdrop-blur border-b border-brandBorder shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <div class="flex-1 flex items-center justify-start">
+                    <div class="md:hidden flex items-center mr-4">
+                        <svg class="w-6 h-6 text-brandDark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </div>
+                    <div class="hidden md:flex space-x-6 lg:space-x-8">
+                        <a href="#shop" class="text-brandDark font-semibold uppercase tracking-wider text-sm hover:text-brandRed transition">Shop Ghee</a>
+                        <a href="#benefits" class="text-brandDark font-semibold uppercase tracking-wider text-sm hover:text-brandRed transition">Benefits</a>
+                        <a href="#story" class="text-brandDark font-semibold uppercase tracking-wider text-sm hover:text-brandRed transition">Our Farm</a>
+                    </div>
+                </div>
+
+                <div class="flex-1 flex items-center justify-center">
+                    <a href="#" class="font-serif font-bold text-3xl tracking-tight text-brandDark uppercase">
+                        Godasya
+                    </a>
+                </div>
+
+                <div class="flex-1 flex items-center justify-end space-x-4 lg:space-x-6">
+                    <a href="#" class="hidden lg:block text-brandDark font-semibold uppercase tracking-wider text-sm hover:text-brandRed transition">Account</a>
+                    
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-brandDark cursor-pointer hover:text-brandRed transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-brandWarm py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div class="pr-0 md:pr-8">
+                <p class="uppercase tracking-[0.2em] text-sm font-bold text-brandRed mb-4">Slow Food For Fast Lives</p>
+                <h1 class="text-5xl md:text-6xl font-serif font-bold text-brandDark leading-tight mb-6">
+                    Pure Ghee For Modern Lives
+                </h1>
+                <p class="text-lg mb-8 leading-relaxed opacity-90">
+                    Traditional, small-batch <strong class="font-bold">Desi ghee</strong> and <strong class="font-bold">A2 Bilona cow ghee</strong>, crafted directly on our family farm. Zero preservatives, pure <strong class="font-bold">A2 protein</strong>, and rich taste for your entire family.
+                </p>
+                <a href="https://wa.me/919699920611?text=Hi%20Godasya!%20I%20would%20like%20to%20know%20more%20about%20ordering%20your%20pure%20ghee." target="_blank" rel="noopener noreferrer" class="inline-block bg-brandRed text-brandCream font-bold px-10 py-4 rounded-full uppercase tracking-wider hover:bg-red-700 transition-colors shadow-lg">
+                    Order via WhatsApp
+                </a>
+            </div>
+            <div class="relative h-[400px] md:h-[500px] w-full bg-brandBorder rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center">
+                <img src="YOUR-HERO-JAR-IMAGE.jpg" alt="Jar of Godasya pure A2 cow ghee on a rustic table" class="object-cover w-full h-full">
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-brandDark text-brandCream py-4 marquee-container border-y-[3px] border-brandRed">
+        <div class="marquee-content text-sm md:text-base uppercase tracking-widest font-semibold space-x-12">
+            <span>100% Homemade Ghee &bull;</span>
+            <span>Rich in A2 Protein &bull;</span>
+            <span>No Preservatives &bull;</span>
+            <span>Family Farms Products &bull;</span>
+            <span>Authentic Desi Ghee &bull;</span>
+            <span>100% Homemade Ghee &bull;</span>
+            <span>Rich in A2 Protein &bull;</span>
+            <span>No Preservatives &bull;</span>
+            <span>Family Farms Products &bull;</span>
+            <span>Authentic Desi Ghee &bull;</span>
+        </div>
+    </div>
+
+    <section id="shop" class="py-20 bg-brandCream">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-brandDark mb-4">Fresh From the Farm</h2>
+                <p class="text-lg max-w-2xl mx-auto opacity-80">Sip, simmer, and sauté with the highest quality pure ghee available.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-brandBorder flex flex-col items-center text-center group">
+                    <span class="bg-brandWarm text-brandDark text-xs font-bold uppercase tracking-wider py-1.5 px-4 rounded-full mb-4 inline-block">Best for Daily Cooking</span>
+                    <div class="w-full h-64 bg-brandBorder rounded-xl mb-6 overflow-hidden flex items-center justify-center">
+                        <img src="YOUR-PURE-GHEE-JAR.jpg" alt="Godasya Pure Cow Ghee" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex text-yellow-500 mb-2 text-sm">★★★★★ <span class="text-brandDark opacity-70 ml-2 text-xs">(1,245 Reviews)</span></div>
+                    <h3 class="text-2xl font-serif font-bold text-brandDark mb-2">Pure Cow Ghee</h3>
+                    <p class="text-sm mb-6 flex-grow opacity-80">A kitchen staple. Nutrient-dense, rich homemade ghee perfect for growing kids and everyday nourishment.</p>
+                    <a href="https://wa.me/919699920611?text=Hi%20Godasya!%20I%20would%20like%20to%20order%20the%20Pure%20Cow%20Ghee%20(%E2%82%B9850)." target="_blank" rel="noopener noreferrer" class="w-full block text-center bg-brandRed text-brandCream font-bold py-3.5 rounded-full uppercase tracking-wider hover:bg-red-700 transition-colors shadow-sm">Order Now - ₹850</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-brandBorder flex flex-col items-center text-center group">
+                    <span class="bg-brandDark text-brandCream text-xs font-bold uppercase tracking-wider py-1.5 px-4 rounded-full mb-4 inline-block">Premium Gir Cow</span>
+                    <div class="w-full h-64 bg-brandBorder rounded-xl mb-6 overflow-hidden flex items-center justify-center">
+                        <img src="YOUR-A2-BILONA-JAR.jpg" alt="Godasya A2 Bilona Cow Ghee" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex text-yellow-500 mb-2 text-sm">★★★★★ <span class="text-brandDark opacity-70 ml-2 text-xs">(892 Reviews)</span></div>
+                    <h3 class="text-2xl font-serif font-bold text-brandDark mb-2">A2 Bilona Cow Ghee</h3>
+                    <p class="text-sm mb-6 flex-grow opacity-80">Made using the traditional Bilona method. Packed with pure A2 protein for maximum health benefits and digestion.</p>
+                    <a href="https://wa.me/919699920611?text=Hi%20Godasya!%20I%20would%20like%20to%20order%20the%20A2%20Bilona%20Cow%20Ghee%20(%E2%82%B91,450)." target="_blank" rel="noopener noreferrer" class="w-full block text-center bg-brandRed text-brandCream font-bold py-3.5 rounded-full uppercase tracking-wider hover:bg-red-700 transition-colors shadow-sm">Order Now - ₹1,450</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-20 bg-brandWarm border-t border-brandBorder/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-brandDark mb-4">Nourishment for Every Stage of Life</h2>
+                <p class="text-lg max-w-2xl mx-auto opacity-80">Our pure ghee is a functional superfood designed to support diverse lifestyles.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-brandCream p-6 rounded-2xl border border-brandBorder shadow-sm text-center">
+                    <div class="w-16 h-16 mx-auto bg-white border border-brandBorder rounded-full flex items-center justify-center mb-6 shadow-sm">
+                        <svg class="w-8 h-8 text-brandRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brandDark mb-3">The IT Professional</h3>
+                    <p class="text-sm leading-relaxed opacity-80">Sustained energy and brain health for long desk hours without the afternoon crash.</p>
+                </div>
+                <div class="bg-brandCream p-6 rounded-2xl border border-brandBorder shadow-sm text-center">
+                    <div class="w-16 h-16 mx-auto bg-white border border-brandBorder rounded-full flex items-center justify-center mb-6 shadow-sm">
+                        <svg class="w-8 h-8 text-brandRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brandDark mb-3">Growing Kids</h3>
+                    <p class="text-sm leading-relaxed opacity-80">Essential fats, vitamins, and pure nutrition for healthy physical and cognitive development.</p>
+                </div>
+                <div class="bg-brandCream p-6 rounded-2xl border border-brandBorder shadow-sm text-center">
+                    <div class="w-16 h-16 mx-auto bg-white border border-brandBorder rounded-full flex items-center justify-center mb-6 shadow-sm">
+                        <svg class="w-8 h-8 text-brandRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brandDark mb-3">Expecting Mothers</h3>
+                    <p class="text-sm leading-relaxed opacity-80">Pure, nutrient-dense <strong class="font-semibold">homemade ghee</strong> for maternal health, immunity, and postpartum recovery.</p>
+                </div>
+                <div class="bg-brandCream p-6 rounded-2xl border border-brandBorder shadow-sm text-center">
+                    <div class="w-16 h-16 mx-auto bg-white border border-brandBorder rounded-full flex items-center justify-center mb-6 shadow-sm">
+                        <svg class="w-8 h-8 text-brandRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brandDark mb-3">Healthy Weight Gain</h3>
+                    <p class="text-sm leading-relaxed opacity-80">Clean, highly digestible calories packed with fat-soluble vitamins to reach your health goals naturally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brandCream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-brandDark text-center mb-16">Trusted by Thousands of Families</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-brandBorder shadow-sm">
+                    <div class="text-brandRed text-xl mb-4">★★★★★</div>
+                    <p class="italic text-lg mb-6 leading-relaxed opacity-90">"The authentic taste of <strong class="font-bold">Desi ghee</strong> I remember from my childhood. Perfect for my toddler's meals and my daily cooking. Highly recommend!"</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-brandDark">— Priya S.</span>
+                        <span class="text-xs uppercase tracking-wider text-brandDark opacity-60 font-semibold flex items-center"><svg class="w-4 h-4 mr-1 text-[#25D366]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Verified Buyer</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-brandBorder shadow-sm">
+                    <div class="text-brandRed text-xl mb-4">★★★★★</div>
+                    <p class="italic text-lg mb-6 leading-relaxed opacity-90">"Upgraded to their <strong class="font-bold">A2 cow ghee</strong> for my health journey to gain good weight. The aroma of this <strong class="font-bold">Gir</strong> cow ghee is completely unmatched."</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-brandDark">— Rohan M.</span>
+                        <span class="text-xs uppercase tracking-wider text-brandDark opacity-60 font-semibold flex items-center"><svg class="w-4 h-4 mr-1 text-[#25D366]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Verified Buyer</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-brandBorder shadow-sm">
+                    <div class="text-brandRed text-xl mb-4">★★★★★</div>
+                    <p class="italic text-lg mb-6 leading-relaxed opacity-90">"As an IT worker sitting all day, I switched to this for better digestion. It's the cleanest <strong class="font-bold">pure ghee</strong> I've ever found. I have more energy and focus."</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-brandDark">— Ananya K.</span>
+                        <span class="text-xs uppercase tracking-wider text-brandDark opacity-60 font-semibold flex items-center"><svg class="w-4 h-4 mr-1 text-[#25D366]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Verified Buyer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="bg-brandDark text-brandCream py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Rooted in Tradition, Crafted in Small Batches</h2>
+                <p class="text-lg mb-6 leading-relaxed opacity-90">
+                    We believe in honest, transparent food. Unlike commercial brands, our <strong class="font-semibold text-white">family farms products</strong> are made the traditional way. 
+                </p>
+                <p class="text-lg mb-8 leading-relaxed opacity-90">
+                    By strictly controlling our process from our pasture-raised cows to the final jar, we ensure every spoon of our <strong class="font-semibold text-white">cow ghee</strong> retains its natural healing properties, rich flavor, and essential nutrients.
+                </p>
+                <a href="#" class="inline-block border-2 border-brandCream text-brandCream font-bold px-8 py-4 rounded-full uppercase tracking-wider hover:bg-brandCream hover:text-brandDark transition-colors">
+                    Learn About Our Process
+                </a>
+            </div>
+            <div class="relative h-96 bg-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+                 <img src="https://images.unsplash.com/photo-1543844607-062402170ba2?q=80&w=800&auto=format&fit=crop" alt="Cows grazing on a green family farm pasture" class="object-cover w-full h-full opacity-80 mix-blend-overlay">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brandCream pt-16 pb-8 border-t border-brandBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-[#000000]">
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-serif font-bold mb-4">10% off your first jar</h3>
+                    <p class="mb-6 text-sm opacity-80">By subscribing, you'll also receive recipes, wellness tips, and special offers. Unsubscribe anytime.</p>
+                    <form class="flex flex-col sm:flex-row gap-2">
+                        <input type="email" placeholder="Enter your email address" class="flex-grow px-5 py-3 rounded-full border border-brandBorder focus:outline-none focus:border-brandRed bg-white" required>
+                        <button type="submit" class="bg-brandRed text-brandCream font-bold px-8 py-3 rounded-full uppercase tracking-wider hover:bg-red-700 transition-colors whitespace-nowrap shadow-sm">Get My Coupon</button>
+                    </form>
+                </div>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider mb-4">Shop</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-[#bbbbbb] hover:text-brandRed transition">Pure Cow Ghee</a></li>
+                            <li><a href="#" class="text-[#bbbbbb] hover:text-brandRed transition">A2 Bilona Ghee</a></li>
+                            <li><a href="#" class="text-[#bbbbbb] hover:text-brandRed transition">Monthly Bundles</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider mb-4">Explore</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-[#bbbbbb] hover:text-brandRed transition">Our Story</a></li>
+                            <li><a href="#" class="text-[#bbbbbb] hover:text-brandRed transition">Ghee Benefits</a></li>
+                            <li><a href="#" class="text-[#bbbbbb] hover:text-brandRed transition">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider mb-4">Company</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-[#bbbbbb] hover:text-brandRed transition">Contact Us</a></li>
+                            <li><a href="#" class="text-[#bbbbbb] hover:text-brandRed transition">Wholesale</a></li>
+                            <li><a href="#" class="text-[#bbbbbb] hover:text-brandRed transition">Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-brandBorder pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-[#bbbbbb]">
+                <p>&copy; 2026 GODASYA. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-brandDark transition">Refund Policy</a>
+                    <a href="#" class="hover:text-brandDark transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-brandDark transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919699920611?text=Hi%20Godasya!%20I%20have%20a%20question%20about%20your%20pure%20ghee." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#128C7E] transition-transform transform hover:scale-110 z-50 flex items-center justify-center group" aria-label="Chat with us on WhatsApp">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </svg>
     </a>
-    <ul class="nav-links">
-      <li><a href="#why">Why Us</a></li>
-      <li><a href="#benefits">Benefits</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#about">Our Story</a></li>
-    </ul>
-    <a href="https://wa.me/919699920611?text=Hi%20Godasya%2C%20I%20want%20to%20order%20pure%20A2%20cow%20ghee!" class="nav-cta" target="_blank" rel="noopener">Order on WhatsApp</a>
-    <div class="hamburger"><span></span><span></span><span></span></div>
-  </nav>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-content">
-      <div class="hero-badge"><i class="fas fa-leaf"></i> 100% Pure · No Adulteration · Farm to Jar</div>
-      <h1>Nourish Your Family with <span>Pure A2 Cow Ghee</span></h1>
-      <p class="hero-sub">Traditionally churned from Gir cow milk. Sourced straight from our family farms in Maharashtra. Packed with A2 protein, vitamins &amp; ancient wellness.</p>
-      <div class="hero-btns">
-        <a href="https://wa.me/919699920611?text=Hi%20Godasya%2C%20I%20want%20to%20order%20pure%20A2%20cow%20ghee!" class="btn-primary" target="_blank" rel="noopener">
-          <i class="fab fa-whatsapp"></i> Shop Now on WhatsApp
-        </a>
-        <a href="#why" class="btn-secondary">Learn More</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Pure A2 Milk</div></div>
-        <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Happy Families</div></div>
-        <div class="stat"><div class="stat-num">Zero</div><div class="stat-label">Chemicals Added</div></div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="jar-graphic">
-        <div class="jar-lid"></div>
-        <div class="jar-body">
-          <div class="jar-fill">🧈</div>
-          <div class="jar-label-tag">
-            <div class="brand">Godasya</div>
-            <div class="product">Pure A2 Gir Cow Ghee</div>
-          </div>
-        </div>
-        <div class="floating-badge fb1"><i class="fas fa-certificate"></i> FSSAI Certified</div>
-        <div class="floating-badge fb2"><i class="fas fa-star"></i> A2 Protein Rich</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY GODASYA -->
-  <section id="why">
-    <div class="text-center">
-      <div class="section-label">Why Choose Us</div>
-      <h2>What Makes Godasya <span>Different?</span></h2>
-      <p class="section-desc">We don't just sell ghee. We share a centuries-old tradition of purity — from our farm, to your kitchen, straight into your family's health.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-icon">🐄</div>
-        <h3>Authentic Gir Cow Milk</h3>
-        <p>Our ghee is made exclusively from the milk of indigenous Gir cows — known for producing the richest A2 beta-casein protein milk in India.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">🏡</div>
-        <h3>Own Family Farms</h3>
-        <p>Every drop is sourced from our own family farms. No third-party suppliers, no mixing — complete transparency from cow to jar.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">🪨</div>
-        <h3>Traditional Bilona Process</h3>
-        <p>Made using the ancient Bilona churning method — slow, hand-churned, and wood-fire simmered — to preserve every nutrient and aroma.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">🚫</div>
-        <h3>Zero Adulteration</h3>
-        <p>No preservatives, no artificial colour, no added fats. What you see in the jar is pure ghee — nothing added, nothing hidden.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">📦</div>
-        <h3>Hygienic Glass Packaging</h3>
-        <p>Packed in food-grade glass jars that preserve freshness, aroma, and nutritional value — delivered safely to your doorstep.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">✅</div>
-        <h3>FSSAI Registered</h3>
-        <p>Fully compliant with FSSAI food safety standards. Every batch is quality-checked before it leaves our farm facility.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- BENEFITS -->
-  <section id="benefits">
-    <div class="text-center" style="position:relative;">
-      <div class="section-label" style="color:var(--gold-light)">Health Benefits</div>
-      <h2>Why A2 Ghee is <span>Pure Gold</span> for Your Family</h2>
-      <p class="section-desc">Modern science is now confirming what Ayurveda has known for 5,000 years — A2 cow ghee is one of the most powerful superfoods available.</p>
-    </div>
-    <div class="benefits-grid">
-      <div class="benefit-card">
-        <div class="benefit-head"><div class="benefit-icon">🤰</div><h3>Safe for Pregnant Women</h3></div>
-        <p>Rich in fat-soluble vitamins A, D, E, K2 — essential for foetal brain development, bone density, and maternal energy during pregnancy.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-head"><div class="benefit-icon">👶</div><h3>Ideal for Toddlers (0–9 yrs)</h3></div>
-        <p>A2 ghee supports healthy brain growth, strong immunity, and better height/weight gain in growing children. A trusted first food in Indian traditions.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-head"><div class="benefit-icon">💪</div><h3>Natural Weight Gain</h3></div>
-        <p>Calorie-dense, packed with healthy fats and CLA, Godasya ghee helps lean individuals gain muscle mass and body weight the healthy, natural way.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-head"><div class="benefit-icon">🧠</div><h3>Brain & Memory Boost</h3></div>
-        <p>Omega-3 fatty acids and butyrate in A2 ghee support cognitive function, focus, and memory retention across all age groups.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-head"><div class="benefit-icon">🫀</div><h3>Heart Friendly</h3></div>
-        <p>Unlike refined oils, A2 ghee has a high smoke point and contains no trans fats. Moderate daily consumption supports healthy cholesterol levels.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-head"><div class="benefit-icon">🌿</div><h3>Gut Health & Digestion</h3></div>
-        <p>Butyric acid in ghee nourishes the gut lining, reducing inflammation and improving absorption of nutrients — essential for overall wellness.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCTS -->
-  <section id="products">
-    <div class="text-center">
-      <div class="section-label">Our Products</div>
-      <h2>Choose Your <span>Perfect Pack</span></h2>
-      <p class="section-desc">All our products are freshly made in small batches. Order on WhatsApp and get it delivered directly from our farm to your home.</p>
-    </div>
-    <div class="products-grid">
-      <div class="product-card">
-        <div class="product-img">🧈<span class="product-badge">Best Seller</span></div>
-        <div class="product-info">
-          <h3>Pure A2 Gir Cow Ghee – 500g</h3>
-          <p>Perfect for daily cooking. Rich golden colour, nutty aroma, and traditional Bilona texture — just as your grandmother made it.</p>
-          <div class="product-price">₹699 <span>/ 500g glass jar</span></div>
-          <a href="https://wa.me/919699920611?text=Hi%20Godasya%2C%20I%20want%20to%20order%20500g%20A2%20Cow%20Ghee!" class="btn-order" target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i> Order on WhatsApp
-          </a>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-img">🏺<span class="product-badge">Most Value</span></div>
-        <div class="product-info">
-          <h3>Pure A2 Gir Cow Ghee – 1 kg</h3>
-          <p>Our most popular pack for families. Fresh-churned A2 ghee in premium glass jar — ideal for cooking, dal tadka, khichdi, and more.</p>
-          <div class="product-price">₹1,299 <span>/ 1kg glass jar</span></div>
-          <a href="https://wa.me/919699920611?text=Hi%20Godasya%2C%20I%20want%20to%20order%201kg%20A2%20Cow%20Ghee!" class="btn-order" target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i> Order on WhatsApp
-          </a>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-img">🎁<span class="product-badge">Gift Ready</span></div>
-        <div class="product-info">
-          <h3>Family Combo – 500g × 2</h3>
-          <p>Gift pure wellness. Two artisan glass jars in a beautifully packed box — perfect for weddings, baby showers, Diwali, or any gifting occasion.</p>
-          <div class="product-price">₹1,349 <span>/ combo (save ₹49)</span></div>
-          <a href="https://wa.me/919699920611?text=Hi%20Godasya%2C%20I%20want%20to%20order%20the%20Family%20Combo%20pack!" class="btn-order" target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i> Order on WhatsApp
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section id="process">
-    <div class="text-center">
-      <div class="section-label">How We Make It</div>
-      <h2>From Udder to Jar – <span>Pure &amp; Simple</span></h2>
-      <p class="section-desc">No shortcuts. No factories. Our 5-step traditional process takes 3 days — because quality cannot be rushed.</p>
-    </div>
-    <div class="process-steps">
-      <div class="step">
-        <div class="step-num">🐄</div>
-        <h3>Gir Cow Milking</h3>
-        <p>Fresh A2 milk collected ethically from our Gir cows every morning after the calf has been fed.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">🥛</div>
-        <h3>Curd Setting</h3>
-        <p>Milk is naturally curdled overnight using traditional starter cultures — no lab shortcuts.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">🔄</div>
-        <h3>Bilona Churning</h3>
-        <p>Curd is slowly hand-churned in the traditional Bilona method to separate pure white butter.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">🔥</div>
-        <h3>Slow Wood-Fire Simmering</h3>
-        <p>Butter is simmered on a low wood fire to evaporate all moisture — creating pure, golden ghee.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">📦</div>
-        <h3>Hygienic Bottling</h3>
-        <p>Filtered and poured into food-grade glass jars, sealed and labelled — ready for your family.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="about-grid">
-      <div class="about-visual">🌾</div>
-      <div class="about-text">
-        <div class="section-label">Our Story</div>
-        <h2>A Family's <span>Promise of Purity</span></h2>
-        <p>Godasya was born from a simple belief — every Indian family deserves ghee that is truly pure, the way it was made for generations before us. The name 'Godasya' (गोदास्य) is rooted in Sanskrit, meaning "one who serves the cow" — reflecting our deep respect for Gir cows and the gift of A2 milk.</p>
-        <p>We are a small family operation based in Maharashtra. Our Gir cows are raised with love, fed naturally, and never injected with hormones. The entire process — from milking to churning to packaging — happens within our family farm under our watchful eyes.</p>
-        <div class="about-highlights">
-          <div class="about-highlight">
-            <div class="ab-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="ab-text"><h4>Based in Maharashtra, India</h4><p>Proudly serving families across Pune, Pimpri-Chinchwad, and PAN India via delivery.</p></div>
-          </div>
-          <div class="about-highlight">
-            <div class="ab-icon"><i class="fas fa-leaf"></i></div>
-            <div class="ab-text"><h4>No Factory, Only Farm</h4><p>Every jar you receive was made by hand on our family farm — not in a factory.</p></div>
-          </div>
-          <div class="about-highlight">
-            <div class="ab-icon"><i class="fas fa-shield-alt"></i></div>
-            <div class="ab-text"><h4>FSSAI Registered</h4><p>Fully compliant with Indian food safety standards. Your family's health is our responsibility.</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section id="testimonials">
-    <div class="text-center">
-      <div class="section-label">Customer Love</div>
-      <h2>Real Families, <span>Real Results</span></h2>
-      <p class="section-desc">Don't take our word for it. Hear from the families who have made Godasya a daily part of their healthy living.</p>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>"My paediatrician asked me to introduce ghee for my 8-month-old. I tried Godasya and the difference was visible — better digestion, healthier skin, and she absolutely loves the taste mixed in khichdi!"</p>
-        <div class="reviewer"><div class="reviewer-avatar">P</div><div><div class="reviewer-name">Priya Joshi</div><div class="reviewer-city">Pune, Maharashtra</div></div></div>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>"I was skeptical about spending more on premium ghee but after 2 months, my energy levels are up, digestion improved and my gym gains are noticeably better. Pure ghee is worth every rupee."</p>
-        <div class="reviewer"><div class="reviewer-avatar">R</div><div><div class="reviewer-name">Rahul Deshmukh</div><div class="reviewer-city">Nashik, Maharashtra</div></div></div>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>"My mother is pregnant and we were very particular about what she eats. Godasya's A2 ghee has been a staple in her diet for 5 months. The aroma and texture are just like ghee from our village."</p>
-        <div class="reviewer"><div class="reviewer-avatar">S</div><div><div class="reviewer-name">Sneha Kulkarni</div><div class="reviewer-city">Mumbai, Maharashtra</div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="cta">
-    <h2>Ready to Experience Pure A2 Goodness?</h2>
-    <p>Order on WhatsApp in under 60 seconds. Free delivery in Pimpri-Chinchwad &amp; Pune for orders above ₹999.</p>
-    <div class="cta-btns">
-      <a href="https://wa.me/919699920611?text=Hi%20Godasya%2C%20I%20want%20to%20order%20pure%20A2%20cow%20ghee!" class="btn-white" target="_blank" rel="noopener">
-        <i class="fab fa-whatsapp" style="color:#25D366"></i> Shop Now on WhatsApp
-      </a>
-      <a href="#products" class="btn-outline-white">View All Products</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="logo-text">🐄 Godasya</span>
-        <p>Pure A2 Gir Cow Ghee, traditionally churned and sourced from our family farms in Maharashtra. Bringing ancient wellness to modern homes since 2024.</p>
-        <div class="footer-social">
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-          <a href="https://wa.me/919699920611" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#why">Why Godasya</a></li>
-          <li><a href="#benefits">Health Benefits</a></li>
-          <li><a href="#products">Our Products</a></li>
-          <li><a href="#process">Our Process</a></li>
-          <li><a href="#about">Our Story</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact Us</h4>
-        <ul>
-          <li><a href="https://wa.me/919699920611" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Order</a></li>
-          <li><a href="mailto:hello@godasya.in">hello@godasya.in</a></li>
-          <li><a href="#">Pimpri-Chinchwad, Maharashtra</a></li>
-          <li><a href="https://godasya.in">godasya.in</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Godasya. All rights reserved. | <a href="#" style="color:rgba(255,255,255,0.45)">Privacy Policy</a></p>
-      <div class="fssai-badge"><i class="fas fa-shield-alt" style="color:var(--gold)"></i> FSSAI Reg. No: [Your FSSAI Number]</div>
-    </div>
-  </footer>
-
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/919699920611?text=Hi%20Godasya%2C%20I%20want%20to%20order%20pure%20A2%20cow%20ghee!" class="wa-float" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <script>
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
-      });
-    });
-    // Hamburger toggle (mobile)
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    hamburger && hamburger.addEventListener('click', () => {
-      navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-      navLinks.style.flexDirection = 'column';
-      navLinks.style.position = 'absolute';
-      navLinks.style.top = '72px';
-      navLinks.style.right = '0';
-      navLinks.style.left = '0';
-      navLinks.style.background = 'var(--cream)';
-      navLinks.style.padding = '20px 5%';
-      navLinks.style.borderBottom = '1px solid var(--border)';
-      navLinks.style.gap = '16px';
-    });
-    // Scroll reveal animation
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if(e.isIntersecting){ e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }});
-    }, {threshold: 0.1});
-    document.querySelectorAll('.why-card, .benefit-card, .product-card, .testimonial-card, .step').forEach(el => {
-      el.style.opacity = '0'; el.style.transform = 'translateY(24px)'; el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      observer.observe(el);
-    });
-  </script>
 </body>
 </html>
